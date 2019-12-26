@@ -1,3 +1,5 @@
+dist: bionic
+
 language: python
 
 python:
@@ -5,7 +7,7 @@ python:
 
 before_install:
   - mv travis_secrets.yaml secrets.yaml
-  - sudo apt-get install --assume-yes libudev-dev
+  - sudo apt-get install --assume-yes libudev-dev python3.7-dev
 
 install:
   - pip3 install homeassistant
