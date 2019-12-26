@@ -4,6 +4,7 @@
 !.gitignore
 !*.md
 !.travis.yml
+!www/*.js
 
 .storage
 .cloud
@@ -13,3 +14,4 @@ ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 
+www/community
