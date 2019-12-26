@@ -1,0 +1,43 @@
+resources:
+  - url: /local/tankerkoenig-card.js?v=0.0.1
+    type: js
+  - url: /local/weather-card-chart.js
+    type: module
+
+views:
+  - cards:
+    # Tankerkoenig Lovelace Card
+    # see https://github.com/panbachi/tankerkoenig-card
+    - type: 'custom:tankerkoenig-card'
+      name: Benzinpreise
+      show:
+        - e5
+        - diesel
+      stations:
+        - name: Salem Neufrach
+          brand: AVIA
+          e5: sensor.avia_tankstelle_salem_neufrach_e5
+          diesel: sensor.avia_tankstelle_salem_neufrach_diesel
+        - name: Uhldingen-Mühlhofen
+          brand: ESSO
+          e5: sensor.esso_tankstelle_uhldingen_muhlhofen_e5
+          diesel: sensor.esso_tankstelle_uhldingen_muhlhofen_diesel
+        - name: Überlingen-Nussdorf
+          brand: ARAL
+          e5: sensor.aral_tankstelle_uberlingen_nussdorf_e5
+          diesel: sensor.aral_tankstelle_uberlingen_nussdorf_diesel
+        - name: Überlingen
+          brand: HEM
+          e5: sensor.hem_tankstelle_uberlingen_e5
+          diesel: sensor.hem_tankstelle_uberlingen_diesel
+        - name: Bermatingen
+          brand: Total
+          e5: sensor.total_tankstelle_bermatingen_e5
+          diesel: sensor.total_tankstelle_bermatingen_diesel
+    # lovelace-weather-card-chart 
+    # see https://github.com/sgttrs/lovelace-weather-card-chart
+    - type: 'custom:weather-card-chart'
+      title: Wetter
+      weather: weather.dark_sky
+      mode: hourly    
+

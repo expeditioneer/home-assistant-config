@@ -1,0 +1,52 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+lovelace:
+  mode: yaml
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+tankerkoenig:
+  api_key: !secret tankerkoenig_api_key
+  monitored_conditions:
+    - e5
+    - diesel
+    - state
+  stations:
+    - id: '2822fc54-4d03-4a97-a3ab-1b00e04c5f46'
+      name: 'AVIA Tankstelle - Salem-Neufrach'
+      street: 'Markdorfer Straße'
+      brand: AVIA
+    - id: '4cdc6610-70a9-409c-a6b4-492c846e9679'
+      name: 'Esso Tankstelle - Uhldingen-Mühlhofen'
+      street: 'Meersburger Straße'
+      brand: ESSO
+    - id: '493540d2-189a-412a-a5c8-12b01ecb2cce'
+      name: 'Aral Tankstelle - Überlingen-Nussdorf'
+      street: 'Nußdorfer Straße'
+      brand: ARAL
+    - id: 'e1a15081-257e-9107-e040-0b0a3dfe563c'
+      name: 'HEM Tankstelle - Überlingen'
+      street: 'Zur Weierhalde'
+      brand: HEM
+    - id: 'ad92da60-c744-483c-967a-88748c09d171'
+      name: 'Total Tankstelle - Bermatingen'
+      street: 'Salemer Straße'
+      brand: TOTAL
+
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+
