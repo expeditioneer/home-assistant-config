@@ -3,6 +3,7 @@
 !*.yaml
 !.gitignore
 !*.md
+!.travis.yml
 
 .storage
 .cloud
