@@ -1,10 +1,7 @@
-*
 
-!*.yaml
-!.gitignore
-!*.md
-!.travis.yml
-!www/*.js
+.HA_VERSION
+
+home-assistant_v2.db
 
 .storage
 .cloud
@@ -14,4 +11,3 @@ ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 
-www/community
