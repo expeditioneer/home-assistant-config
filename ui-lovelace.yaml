@@ -1,7 +1,7 @@
 resources:
   - url: /local/community/tankerkoenig-card/tankerkoenig-card.js?v=0.0.1
     type: js
-  - url: /local/community/weather-card-chart.js
+  - url: /local/community/weather-card-chart/weather-card-chart.js
     type: module
 
 views:
