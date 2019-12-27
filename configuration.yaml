@@ -53,3 +53,8 @@ weather:
   - platform: darksky
     api_key: !secret darksky_api_key
 
+sensor:
+  - platform: waqi
+    token: !secret aqicn_api_key
+    locations:
+      - !secret aqicn_location
