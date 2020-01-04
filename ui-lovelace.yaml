@@ -1,4 +1,6 @@
 resources:
+  - url: /local/community/air-visual-card/air-visual-card
+    type: js
   - url: /local/community/tankerkoenig-card/tankerkoenig-card.js?v=0.0.1
     type: js
   - url: /local/community/weather-card-chart/weather-card-chart.js
@@ -40,4 +42,6 @@ views:
       title: Wetter
       weather: weather.dark_sky
       mode: hourly    
-
+    - type: 'custom:air-visual-card'
+      title: Air Quality
+        icons: '/local/community/air-visual/card/icons'
