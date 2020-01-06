@@ -1,5 +1,5 @@
 resources:
-  - url: /local/community/air-visual-card/air-visual-card.js
+  - url: /community_plugin/air-visual-card/air-visual-card.js
     type: js
   - url: /community_plugin/tankerkoenig-card/tankerkoenig-card.js
     type: js
