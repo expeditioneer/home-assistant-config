@@ -1,7 +1,7 @@
 resources:
   - url: /local/community/air-visual-card/air-visual-card.js
     type: js
-  - url: /local/community/tankerkoenig-card/tankerkoenig-card.js?v=0.0.1
+  - url: /community_plugin/tankerkoenig-card/tankerkoenig-card.js
     type: js
   - url: /local/community/weather-card-chart/weather-card-chart.js
     type: module
@@ -45,4 +45,4 @@ views:
     # air-visual-card
     # see https://github.com/dnguyen800/Air-Visual-Card
     - type: custom:air-visual-card
-      icons: '/local/community/air-visual-card/icons'
+      icons: '/community_plugin/air-visual-card/'
