@@ -12,3 +12,5 @@ secrets.yaml
 known_devices.yaml
 
 __pycache__
+
+www/community
