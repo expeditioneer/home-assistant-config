@@ -23,9 +23,8 @@ scene: !include scenes.yaml
 
 hacs:
   token: !secret hacs_github_access_token
-  options:
-    country: de
-    release_limit: 3
+  country: de
+  release_limit: 3
 
 tankerkoenig:
   api_key: !secret tankerkoenig_api_key
