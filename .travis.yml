@@ -1,9 +1,13 @@
-dist: bionic
+ dist: bionic
 
 language: python
 
 python:
   - "3.7"
+
+git:
+  depth: 1
+  quiet: true
 
 before_install:
   - mv travis_secrets.yaml secrets.yaml
